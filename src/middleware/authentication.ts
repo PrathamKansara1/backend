@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from "express";
-import { UserModel } from "../models/users/user.model";
-import { ErrorHandler } from "../utils/errorHandler";
-import trycatch from "./trycatch";
+import { UserModel } from "@/models/users/user.model";
+import { ErrorHandler } from "@/utils/errorHandler";
+import trycatch from "@/middleware/trycatch";
 import jwt from "jsonwebtoken";
-import { StatusCode } from "../types/statuscodes/statusCodes";
-import { User } from "../types/models/users/userSchema";
+import { StatusCode } from "@/types/statuscodes/statusCodes";
+import { User } from "@/types/models/users/userSchema";
 
 export interface AuthenticatedRequest extends Request {
   user?: User | null;

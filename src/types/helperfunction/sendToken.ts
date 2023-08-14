@@ -1,6 +1,6 @@
 import { Response } from "express";
-import { StatusCode } from "../statuscodes/statusCodes";
-import { Client, User, Worker } from "../models/users/userSchema";
+import { StatusCode } from "@/types/statuscodes/statusCodes";
+import { Client, User, Worker } from "@/types/models/users/userSchema";
 
 export type SendTokenPayload = {
   user: User | Worker | Client;

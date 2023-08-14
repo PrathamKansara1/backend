@@ -1,12 +1,12 @@
 import dotenv from "dotenv";
 dotenv.config();
 import express from "express";
-import connectDB from "./db/connect";
+import connectDB from "@/db/connect";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
-import userRoute from "./routes/users/users";
-import orderRoute from "./routes/orders/orders";
-import addressRoute from "./routes/address/address";
+import userRoute from "@/routes/users/users";
+import orderRoute from "@/routes/orders/orders";
+import addressRoute from "@/routes/address/address";
 
 const app = express();
 const port = 3000;

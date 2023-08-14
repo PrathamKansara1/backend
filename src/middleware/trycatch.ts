@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import { ErrorHandler } from "../utils/errorHandler";
-import { StatusCode } from "../types/statuscodes/statusCodes";
-import { AuthenticatedRequest } from "./authentication";
+import { ErrorHandler } from "@/utils/errorHandler";
+import { StatusCode } from "@/types/statuscodes/statusCodes";
+import { AuthenticatedRequest } from "@/middleware/authentication";
 
 type ExpressMiddleware = (
   req: AuthenticatedRequest,

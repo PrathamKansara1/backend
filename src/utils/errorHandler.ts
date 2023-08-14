@@ -1,4 +1,4 @@
-import { StatusCode } from "../types/statuscodes/statusCodes";
+import { StatusCode } from "@/types/statuscodes/statusCodes";
 
 export class ErrorHandler extends Error {
   statusCode: StatusCode;

@@ -1,4 +1,4 @@
-import { SendTokenPayload } from "../types/helperfunction/sendToken";
+import { SendTokenPayload } from "@/types/helperfunction/sendToken";
 
 export const sendToken = ({ user, statusCode, res }: SendTokenPayload) => {
   const token: string = user.getJwtToken();

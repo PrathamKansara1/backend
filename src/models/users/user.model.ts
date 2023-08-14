@@ -2,11 +2,7 @@ import { NextFunction } from "express";
 import mongoose, { Schema } from "mongoose";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import {
-  User,
-  UserRoles,
-  UserStatus,
-} from "../../types/models/users/userSchema";
+import { User, UserRoles, UserStatus } from "@/types/models/users/userSchema";
 
 const UserSchema: Schema<User> = new Schema<User>({
   username: {

@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import { Address } from "../types/models/address/addressSchema";
+import { Address } from "@/types/models/address/addressSchema";
 
 const AddressSchema: Schema<Address> = new Schema({
   plot_no: {

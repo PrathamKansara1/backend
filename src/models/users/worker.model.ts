@@ -1,6 +1,6 @@
 import { Schema } from "mongoose";
-import { Worker } from "../../types/models/users/userSchema";
-import { UserModel } from "./user.model";
+import { Worker } from "@/types/models/users/userSchema";
+import { UserModel } from "@/models/users/user.model";
 
 const WorkerSchema: Schema<Worker> = new Schema<Worker>({
   address_id: {
