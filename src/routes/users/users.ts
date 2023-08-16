@@ -1,8 +1,8 @@
 import express from "express";
 import {
-  getClients,
-  getWorkers,
+  getUsers,
   loginUser,
+  logoutUser,
   registerUser,
 } from "@/controllers/users/users";
 
@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.route("/create").post(registerUser);
 router.route("/login").post(loginUser);
-router.route("/clients").get(getClients);
-router.route("/workers").get(getWorkers);
+router.route("/logout").get(logoutUser);
+router.route("/:usertype").get(getUsers);
 
 export default router;

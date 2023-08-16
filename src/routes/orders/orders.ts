@@ -1,9 +1,10 @@
 import express from "express";
 import { authenticateUser } from "@/middleware/authentication";
-import { createOrder } from "@/controllers/orders/orders";
+import { createOrder, getOrders } from "@/controllers/orders/orders";
 
 const router = express.Router();
 
 router.route("/create").post(authenticateUser, createOrder);
+router.route("/orders").get(authenticateUser, getOrders);
 
 export default router;
